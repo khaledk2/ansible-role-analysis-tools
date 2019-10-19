@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: ome-devel@lists.openmicroscopy.org.uk
   description: Useful tools for running high-throughput analyses
@@ -5,11 +6,11 @@ galaxy_info:
   license: BSD
   min_ansible_version: 2.1
   platforms:
-  - name: EL
-    versions:
-    - 7
+    - name: EL
+      versions:
+        - 7
   role_name: analysis_tools
   galaxy_tags: []
 
 dependencies:
-- role: ome.basedeps
+  - role: ome.basedeps
