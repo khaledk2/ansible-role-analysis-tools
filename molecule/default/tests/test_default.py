@@ -7,4 +7,4 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 def test_analysis_packages(host):
-        assert host.package('parallel').is_installed
+    assert host.package('parallel').is_installed
