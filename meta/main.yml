@@ -12,6 +12,3 @@ galaxy_info:
   namespace: ome
   role_name: analysis_tools
   galaxy_tags: []
-
-dependencies:
-  - role: ome.basedeps
