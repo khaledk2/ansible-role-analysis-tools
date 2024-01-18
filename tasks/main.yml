@@ -3,7 +3,8 @@
 
 - name: system packages | analysis utils
   become: true
-  yum:
+  ansible.builtin.dnf:
+    update_cache: true
     name: "{{ item }}"
     state: present
   with_items:
