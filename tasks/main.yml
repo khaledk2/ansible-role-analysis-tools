@@ -1,10 +1,18 @@
+
 ---
 # tasks file for roles/analysis-tools
 
+- name: Import a key
+  ansible.builtin.rpm_key:
+    state: present
+    key: https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-9
+
+
 - name: system packages | analysis utils
   become: true
-  yum:
+  ansible.builtin.dnf:
+    update_cache: true
     name: "{{ item }}"
     state: present
   with_items:
-    - parallel
+    - https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/Packages/p/parallel-20230822-1.el9.noarch.rpm
