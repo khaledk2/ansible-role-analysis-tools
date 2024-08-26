@@ -15,4 +15,4 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/Packages/p/parallel-20230822-1.el9.noarch.rpm
+    - https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/Packages/p/parallel-20240722-1.el9.noarch.rpm
